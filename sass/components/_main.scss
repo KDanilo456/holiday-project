@@ -1,0 +1,51 @@
+@import "./utils/variables" ;
+.partners__title{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: $main-color;
+    font-size: 22px;
+    max-width: 280px;
+}
+.partners{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    &__list{
+        padding-left: 0;
+    }
+}
+.partners__name{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: $main-color;
+    font-weight: 700;
+}
+.partners__text{
+    max-width: 224px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+}
+.partners__text-lucas{
+    max-width: 247px;
+}
+.partners__button{
+    width: 280px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid $button-color;
+    color: $button-color;
+    border-radius: 20px;
+}
+@media (min-width: 768px) {
+    .partners__title{
+        max-width: none;
+    }
+    .partners__list{
+        display: flex;
+        gap: 53px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
